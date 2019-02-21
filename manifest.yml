@@ -1,0 +1,8 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 2
+  domain: eu-de.mybluemix.net
+  name: hatest
+  host: hatest
+  disk_quota: 1024M

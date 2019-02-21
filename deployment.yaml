@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: dbgtree-frontend
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: dbgtree-frontend
+    spec:
+      containers:
+      - name: dbgtree-frontend
+        image: registry.eu-de.bluemix.net/ffawzy/dbgtree/front:latest
+        imagePullPolicy: Always

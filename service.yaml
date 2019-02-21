@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: dbgtree-front-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: dbgtree-frontend
+  ports:
+  - protocol: TCP
+    port: 8080
